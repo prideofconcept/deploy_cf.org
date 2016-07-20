@@ -1,0 +1,171 @@
+@blue: #448fb6;
+@dark-blue: #00558e;
+@brown: #65605a;
+@light-green: #9baf8b;
+@yellow: #ddc669;
+
+.header {
+
+  .logo a {
+    margin-top: 10px;
+    width:400px;
+  }
+
+  &.sticky {
+    .logo a {
+      margin-top:8px;
+      width:300px;
+      @media (max-width: 991px) {
+        margin-top:12px;
+        width:280px;
+      }
+    }
+  }
+}
+
+.inner-intro {
+  h2 {font-weight: 300;}
+}
+
+.home-slider {
+	.content-caption {
+		text-align: left;
+
+		h2 {
+			border-left: 5px solid #ddc669;
+			padding: 0 0 0 10px;
+			line-height: 56px;
+			font-weight: 300;
+			font-size: 54px;
+      max-width: 520px;
+		}
+
+		.lead {
+      font-size:14px;
+		}
+	}
+}
+//---------------FEATURE:ACCORDION
+.accordion {
+  .accordion-section {
+    border-color: @brown;
+    border-left:none;
+    border-right:none;
+  }
+	.accordion-title {
+		text-transform: uppercase;
+		color: @blue;
+		font-weight: 600;
+		padding: 12px;
+	}
+}
+//---------------FOOTER
+
+.footer {
+	background-color: @blue;
+	color: @dark-blue;
+
+	a, p {
+		color: @dark-blue;
+		font-size: 13px;
+		line-height: 26px;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		color: white;
+	}
+
+	.footer-logo {
+		max-width: inherit;
+	}
+
+	.footer-info {
+		p {color: @blue;}
+		.copyright {
+			font-size: 12px;
+		}
+			a {
+				color: @blue;
+			}
+		.link li {
+			float:left;
+			margin-right:20px;
+		}
+
+	}
+	.copyright {
+		background-color: @dark-blue;
+	}
+
+	.social {
+		li a {
+			font-size:36px;
+		}
+	}
+}
+
+//---------------FONTS
+
+p {
+	font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.lead, p.lead {
+  font-size:14px;
+}
+
+h1, h3, h5,
+.gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6, .gray-bg .container-icon{
+  color: @brown;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 56px;
+}
+
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+  line-height: 42px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+
+// BACKGROUNDS
+
+.bg-contact, .bg-whatwedo, .bg-agriculture {
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-about {
+  background-image: url("../img/backgrounds/_about.png");
+  height:400px;
+}
+
+.bg-contact {
+  background-image: url("../img/backgrounds/_contact.png");
+}
+
+.bg-whatwedo {
+  background-image: url("../img/backgrounds/_whatwedo.png");
+}
+
+.bg-agriculture {
+  background-image: url("../img/backgrounds/_agriculature.png");
+}
+@import "aux_classes";
+@import "donate";
+@import "form";

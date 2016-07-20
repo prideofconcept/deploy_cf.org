@@ -1,0 +1,425 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Cummings Foundation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.css" />
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/plugin/jPushMenu.css">
+    <link  rel="stylesheet/less" type="text/css" href="styles/style.less">
+    <!-- endbuild -->
+
+  </head>
+<body class="full-intro background--dark">
+
+    <!-- Preloader -->
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Search menu Top -->
+    <section class=" top-search-bar cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top">
+        <div class="container">
+            <div class="search-wraper">
+                <input type="text" class="input-sm form-full" placeholder="Search..." name="search" />
+                <a class="search-bar-icon"><i class="fa fa-search"></i></a>
+                <a class="bar-close toggle-menu menu-top push-body"><i class="ion ion-android-close"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--End Search menu Top -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="l-black" src="img/logo-web.svg" />
+                        <img class="l-white" src="img/logo-web-white.svg" />
+                    </a>
+                </div>
+                <!--End logo-->
+
+                <!-- Rightside Menu (Search, Cart, Bart icon) -->
+                <div class="side-menu-btn hide">
+                    <ul>
+                        <!-- Search Icon -->
+                        <li class="">
+                            <a class="right-icon search toggle-menu menu-top push-body"><i class="fa fa-search"></i></a>
+                        </li>
+                        <!-- End Search Icon -->
+
+                    </ul>
+                </div>
+                <!-- End Rightside Menu -->
+
+                <!-- Navigation Menu -->
+                <nav class='navigation'>
+                    <ul>
+                        <!-- <li><a href="index.html">Who We Are</a></li> -->
+                      <li><a href="about.html">Who We Are</a></li>
+                      <li><a href="whatwedo.html">What We Do</a></li>
+                      <li><a href="work.html">How We Work</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </nav>
+                <!--End Navigation Menu -->
+
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- CONTENT ->
+
+
+
+     <!-- Intro Section -->
+      <section class="bg-contact light-color ptb">
+        <div class="container">
+          <div class="row title">
+            <h2 class="hide">Contact Us</h2>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <!-- End Intro Section -->
+
+
+      <!-- Contact Section -->
+      <section class="ptb ptb-sm-80">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h3>Get In Touch <span class="btn-color-line">/</span> Donate</h3>
+            </div>
+          </div>
+          <div class="spacer-75"></div>
+          <div class="row">
+            <div class="col-md-5 contact">
+              <div class="contact-box-left mb-45">
+                <div class="contact-icon-left"><i class="ion ion-ios-location"></i></div>
+                <h6>Contact info</h6>
+                <p class="mb-0">Near Old Swiss Embassy, Sinkor, Old Road  <br/> Monrovia, Liberia</p>
+                <a href="mailto:info@cummingsfdn.org"><i class="fa fa-envelope-o left"></i>info@cummingsfdn.org</a><br />
+              </div>
+              <div class="contact-box-left mb-45">
+
+                <h6>Follow Us</h6>
+                <ul class="list-none social">
+                  <li><a href="https://twitter.com/CummingsAfrica" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/cummingsafrica_fdn/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1"><!--"https://cmmngsfdn-stripe-relay.herokuapp.com/donate" -->
+              <form id="donation-form" class="form-horizontal donation" action="//localhost:5000/donate" role="form" id="payment-form" method="post">
+                <fieldset>
+                  <legend><h6>Donation: Give to the Cummings Foundation</h6></legend>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text" class="form-full input-lrg" name="amount" id="amount" placeholder="Amount $XXX" value="300">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text" class="form-full input-lrg" name="card_holder_name" id="card_holder_name" placeholder="Card Holder's Name" value="first last name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text" class="form-full input-lrg" name="card_holder_email" id="card_holder_email" placeholder="Donator's Email" value="test@email.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text" class="form-full input-lrg" data-stripe="number" id="number" placeholder="Debit/Credit Card Number" value="4111 1111 1111 1111">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <select class=" input-lrg " data-stripe="exp_month" id="exp_month" >
+                            <option>Month</option>
+                            <option value="00" >Month (xx)</option>
+                            <option value="01" selected="selected">Jan (01)</option>
+                            <option value="02">Feb (02)</option>
+                            <option value="03">Mar (03)</option>
+                            <option value="04">Apr (04)</option>
+                            <option value="05">May (05)</option>
+                            <option value="06">June (06)</option>
+                            <option value="07">July (07)</option>
+                            <option value="08">Aug (08)</option>
+                            <option value="09">Sep (09)</option>
+                            <option value="10">Oct (10)</option>
+                            <option value="11">Nov (11)</option>
+                            <option value="12">Dec (12)</option>
+                          </select>
+
+
+                          <select class=" input-lrg" data-stripe="exp_year"  id="exp_year">
+                            <option value="00">year</option>
+                            <option value="16">2016</option>
+                            <option value="17">2017</option>
+                            <option value="18">2018</option>
+                            <option value="19" selected="selected">2019</option>
+                            <option value="20">2020</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-6">
+                          <input type="text" class="input-lrg" data-stripe="cvc" id="cvv" placeholder="Cvv Code" value="444">
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class=" col-sm-12">
+                      <button type="submit" id="submit-btn" class="btn btn-success input-lrg btn-full" >Donate</button>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- IF DONATE SENT SUCCESSFULLY -->
+                <h6 class="payment-success result">
+                  <i class="fa fa-check left" style="color: #5cb45d;"></i>Your donation has been sent successfully, we will be in contact shortly.
+                </h6>
+                <!-- DONATE SENDING UNSUCCESSFULL -->
+                <h6 class="payment-errors result">
+                  <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please try again, or get in contact!
+                </h6>
+                <!-- END MAIL SENDING UNSUCCESSFULL -->
+
+              </form>
+            </div>
+
+            <div class="col-md-6 col-md-offset-1 hide">
+              <!-- Contact FORM -->
+              <form class="contact-form" id="contact" role="form">
+
+                <!-- IF MAIL SENT SUCCESSFULLY -->
+                <h6 class="successContent">
+                  <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+                </h6>
+                <!-- END IF MAIL SENT SUCCESSFULLY -->
+
+                <!-- MAIL SENDING UNSUCCESSFULL -->
+                <h6 class="errorContent">
+                  <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+                </h6>
+                <!-- END MAIL SENDING UNSUCCESSFULL -->
+
+                <div class="form-field-wrapper">
+                  <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-field-wrapper">
+                  <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required>
+                </div>
+
+                <div class="form-field-wrapper">
+                  <input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Subject">
+                </div>
+
+                <div class="form-field-wrapper">
+                  <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Send Message</button>
+              </form>
+              <!-- END Contact FORM -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+
+
+
+
+
+
+        <!-- END CONTENT -->
+
+        <!-- FOOTER -->
+        <footer class="footer pt-80">
+            <div class="container">
+                <div class="row mb-60">
+                    <!-- Logo -->
+                    <div class="col-md-3 col-sm-6 col-xs-12 mb-xs-30">
+                        <a class="footer-logo" href="index.html">
+                            <!-- <img src="img/logo-black.png" /></a> -->
+                            <h5>Cummings Africa Foundation</h5>
+                        </a>
+                        <br/>
+                        <p class="mb-0">Near Old Swiss Embassy, Sinkor, Old Road <br/> Monrovia, Liberia</p>
+                        <ul class="link-small">
+                            <li><a href="mailto:info@cummingsfdn.com"><i class="fa fa-envelope-o left"></i>info@cummingsfdn.com</a></li>
+                            <li><a target="_blank" href="https://twitter.com/CummingsAfrica"><i class="fa fa-twitter">&nbsp;</i>CummingsAfrica</a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/cummingsafrica_fdn/?hl=en"><i class="fa fa-instagram">&nbsp;</i>cummingsafrica_fdn</a></li>
+                        </ul>
+                    </div>
+                    <!-- Logo -->
+
+                    <!-- Newsletter -->
+                    <div class="col-md-5 col-sm-6 col-xs-12 mb-xs-30 mb-sm-15">
+                        <h5>subscribe</h5>
+                        <div class="newsletter">
+                            <form>
+                                <input type="email" class="newsletter-input input-md newsletter-input mb-0" placeholder="Enter Your Email">
+                                <button class="newsletter-btn btn btn-xs btn-white" type="submit" value=""><i class="fa fa-angle-right mr-0"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Newsletter -->
+
+                    <!-- Social -->
+                    <div class="col-md-3 col-md-offset-1 col-sm-6 col-xs-12">
+                        <h5>follow us</h5>
+                      <ul class="social">
+                        <li><a target="_blank" href="mailto:info@cummingsfdn.com"><i class="fa fa-envelope-o left">&nbsp;</i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/CummingsAfrica"><i class="fa fa-twitter">&nbsp;</i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/cummingsafrica_fdn/?hl=en"><i class="fa fa-instagram">&nbsp;</i></a></li>
+                      </ul>
+                    </div>
+                    <!-- End Social -->
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <section class="copyright pt-40">
+                <div class="container">
+                    <!--Footer Info -->
+                    <div class="row footer-info ptb-15 ">
+                        <div class="col-md-7 col-sm-6 col-xs-12 mb-sm-30 mb-xs-0 hide">
+                            <ul class="link">
+                                <li><a href="blog-grid-3col.html">Blog</a></li>
+                                <li><a href="portfolio-grid-3col.html">Portfolio</a></li>
+                                <li><a href="login-register.html">Login & Signup</a></li>
+                                <li><a href="faq-1.html">FAQ</a></li>
+                                <li><a href="about-1.html">About</a></li>
+                                <li><a href="service-1.html">Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-xs-12 text-right">
+                            <p class="copyright">©2016 <a><b>Cummings Foundation</b></a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <!-- End Footer Info -->
+                </div>
+            </section>
+            <!-- End Copyright Bar -->
+
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/easing/easing.js"></script>
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/eventie/eventie.js"></script>
+    <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+    <script src="bower_components/get-style-property/get-style-property.js"></script>
+    <script src="bower_components/get-size/get-size.js"></script>
+    <script src="bower_components/matches-selector/matches-selector.js"></script>
+    <script src="bower_components/doc-ready/doc-ready.js"></script>
+    <script src="bower_components/fizzy-ui-utils/utils.js"></script>
+    <script src="bower_components/outlayer/item.js"></script>
+    <script src="bower_components/outlayer/outlayer.js"></script>
+    <script src="bower_components/masonry/masonry.js"></script>
+    <script src="bower_components/isotope/js/item.js"></script>
+    <script src="bower_components/isotope/js/isotope.js"></script>
+    <script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/jQuery-viewport-checker/src/jquery.viewportchecker.js"></script>
+    <script src="bower_components/jquery.fitvids/jquery.fitvids.js"></script>
+    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/less/dist/less.js"></script>
+    <script src="bower_components/jPushMenu/js/jPushMenu.js"></script>
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+
+    <script src="scripts/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="scripts/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="scripts/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="scripts/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="scripts/plugin/jquery.flexslider.js" type="text/javascript"></script>
+
+    <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/theme.js" type="text/javascript"></script>
+    <script src="scripts/navigation.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript">
+      Stripe.setPublishableKey('pk_test_Be7JTj8unMrVNjyY2PE0vnCT');
+    </script>
+    <script src="scripts/donate.js"></script>
+    <script src="scripts/plugin/jquery.maskMoney.min.js"></script>
+
+    <!-- endbuild -->
+</body>
+</html>
